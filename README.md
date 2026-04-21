@@ -1,2 +1,2 @@
 # bhushanpatil.github.io
-Bhushan_Portifolia
+Bhushan_Portifolio
