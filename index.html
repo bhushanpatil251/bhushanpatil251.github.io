@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhushan Patil — Senior Cloud Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── CUSTOM CURSOR ── -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ── LOADING SCREEN ── -->
+  <div id="loader">
+    <div class="loader-initials">BP</div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+    <div class="loader-text">Initializing Portfolio</div>
+  </div>
+
+  <!-- ── PARTICLE CANVAS ── -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar">
+    <div class="nav-logo">Bhushan Patil</div>
+    <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#hero">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════
+         HERO
+    ══════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-inner">
+
+        <!-- Left column -->
+        <div class="hero-left reveal">
+          <div class="hero-avail">
+            <span class="avail-dot"></span> Open to Opportunities
+          </div>
+          <h1 class="hero-name">Bhushan<br>Patil</h1>
+          <p class="hero-sub">
+            Senior Cloud Engineer — <span>AWS · Azure · DevOps</span><br>
+            6+ years building secure, scalable cloud infrastructure
+          </p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn-primary">Get in Touch</a>
+            <a href="#experience" class="btn-ghost">View Experience</a>
+          </div>
+        </div>
+
+        <!-- Right column — 3D card -->
+        <div class="hero-right reveal from-right">
+          <div class="hero-card-wrap">
+            <div class="orb-bg"></div>
+            <div class="hero-card">
+              <div class="card-avatar">
+                BP
+                <div class="spin-ring"></div>
+              </div>
+              <div class="card-role">Cloud Engineer</div>
+              <div class="card-name">Bhushan Patil</div>
+              <div class="card-stats">
+                <div class="stat">
+                  <div class="stat-val">6+</div>
+                  <div class="stat-label">Yrs Exp</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-val">95%</div>
+                  <div class="stat-label">Risk Cut</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-val">1K+</div>
+                  <div class="stat-label">Servers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── MARQUEE ── -->
+    <div class="marquee-wrap">
+      <div class="marquee-track" id="marquee-track"></div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         SKILLS
+    ══════════════════════════════════ -->
+    <section id="skills">
+      <div class="reveal"><span class="section-label">Expertise</span></div>
+      <h2 class="section-title reveal">
+        Core <span class="grad-text">Skills</span>
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-bar-group reveal from-left" id="skill-bars"></div>
+        <div class="reveal from-right">
+          <p class="chip-intro">Full technology stack across cloud platforms, DevOps tooling, security, and observability:</p>
+          <div class="chip-cloud" id="chip-cloud"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         EXPERIENCE
+    ══════════════════════════════════ -->
+    <section id="experience">
+      <div class="reveal"><span class="section-label">Career</span></div>
+      <h2 class="section-title reveal">
+        Work <span class="grad-text">Experience</span>
+      </h2>
+      <div class="timeline reveal" id="timeline"></div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         PROJECTS
+    ══════════════════════════════════ -->
+    <section id="projects">
+      <div class="reveal"><span class="section-label">Portfolio</span></div>
+      <h2 class="section-title reveal">
+        Featured <span class="grad-text">Projects</span>
+      </h2>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         EDUCATION & LANGUAGES
+    ══════════════════════════════════ -->
+    <section id="education">
+      <div class="reveal"><span class="section-label">Background</span></div>
+      <h2 class="section-title reveal">
+        Education &amp; <span class="grad-text">Languages</span>
+      </h2>
+      <div class="edu-lang-grid">
+        <div class="edu-cards reveal from-left" id="edu-cards"></div>
+        <div class="reveal from-right">
+          <p class="section-label" style="margin-bottom:24px">Languages</p>
+          <div class="lang-cards" id="lang-cards"></div>
+          <p class="section-label" style="margin-top:40px;margin-bottom:20px">Certifications</p>
+          <div class="cert-grid" id="cert-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         CONTACT
+    ══════════════════════════════════ -->
+    <section id="contact">
+      <div class="reveal"><span class="section-label">Let's Connect</span></div>
+      <h2 class="section-title reveal">
+        Get In <span class="grad-text">Touch</span>
+      </h2>
+      <div class="contact-grid">
+
+        <!-- Contact info cards -->
+        <div class="contact-cards reveal from-left">
+          <div class="contact-card">
+            <div class="contact-icon pink">📧</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-val">bhushanpatil251@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon cyan">📱</div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-val">+91 7709958791</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon amber">📍</div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-val">Pune, Maharashtra, India</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon indigo">🔗</div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-val">bhushan-patil-1918761ab</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon pink">✅</div>
+            <div>
+              <div class="contact-label">Availability</div>
+              <div class="contact-val contact-val--amber">Open to new opportunities</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ripple avatar -->
+        <div class="contact-right reveal from-right">
+          <div class="contact-right-inner">
+            <div class="ripple-ring"></div>
+            <div class="ripple-ring"></div>
+            <div class="ripple-ring"></div>
+            <div class="contact-avatar">BP</div>
+          </div>
+          <p class="contact-tagline">
+            Senior Cloud Engineer crafting resilient, secure &amp; cost-optimized AWS infrastructure
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Designed &amp; built with <span class="heart">♥</span> — Bhushan Patil &copy; 2025</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
